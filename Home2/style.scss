@@ -1,0 +1,102 @@
+// 変数定義
+$korashoColor: #ee4d37;
+$darkblue: #004aad;
+$gray: #e2e2e2;
+$white: #fff;
+$big: 3rem;
+$middle: 1.5rem;
+$normal: 1rem;
+$small: 0.5rem;
+
+// スタイル
+.container {
+    height: 90vh;
+    width: 100vw;
+    background: linear-gradient(180deg, $korashoColor 0%, $korashoColor 50%, $gray 50%, $gray 100%);
+    background-color: $korashoColor;
+}
+
+.magorun {
+    display: flex;
+    justify-content: space-around;
+    a {
+        text-decoration: none;
+    }
+}
+
+.basemagorun, .activemagorun {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 40vw;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 4px 4px 0px black;
+    &-num {
+        font-size: 2rem;
+    }
+    &-tanni {
+        text-align: right;
+    }
+}
+
+.basemagorun {
+    background-color: $white;
+    a {
+        color: $korashoColor;
+    }
+}
+
+.activemagorun {
+    background-color: $darkblue;
+    a {
+        color: $white;
+    }
+}
+
+// 部屋の設定
+.room {
+    margin-top: 1rem;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+// フッターの設定
+.menu {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+
+    .menu-item {
+        width: 60px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        aspect-ratio: 1;
+        border-radius: 25px;
+        background: $white;
+        text-align: center;
+        box-shadow: 4px 4px 0px black;
+        a {
+            text-decoration: none;
+            color: $darkblue;
+        }
+        .menu-icon {
+            width: 100%;
+            height: auto;
+            .menu-icon-img {
+                width: 70%;
+            }
+        }
+    }
+    .menu-item:hover,.menu-item:active{
+        box-shadow: 0px 0px 0px black;
+        transform: translate(4px, 4px);
+    }
+}
