@@ -1,0 +1,89 @@
+.container {
+  height: auto !important;
+}
+
+.content {
+  background-color: #e2e2e2;
+}
+
+.chat {
+  margin: 0.5rem 0.5rem 90px;
+  padding: 0.5rem;
+  height: auto;
+  border-radius: 25px;
+  background-color: #fff;
+}
+.chat .chatcomment {
+  display: flex;
+}
+.chat .chat-icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #004aad;
+  border-radius: 9999px;
+}
+.chat .chatbackground {
+  padding: 0.5rem;
+}
+.chat .blue {
+  border: 1px solid #004aad;
+}
+.chat .red {
+  border: 1px solid #ee4d37;
+}
+.chat .you {
+  text-align: left;
+  color: #004aad;
+  justify-content: left;
+}
+.chat .me {
+  text-align: right;
+  color: #ee4d37;
+  justify-content: right;
+}
+.chat .send {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #70ad00;
+  border-radius: 25px;
+}
+.chat .send .send-text {
+  padding: 0.5rem;
+  width: 60vw;
+  border: 2px solid #70ad00;
+  border-radius: 25px;
+}
+.chat .send .send-button {
+  padding: 0.5rem;
+  background-color: #70ad00;
+  border: 2px solid #70ad00;
+  border-radius: 9999px;
+  font-family: "nikomoji";
+  box-shadow: 3px 3px 0px black;
+}
+.chat .send .two {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.chat .send .two .send-icon {
+  padding: 0.5rem;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 2px solid #70ad00;
+  border-radius: 25px;
+  box-shadow: 3px 3px 0px black;
+}
+.chat .send .two .send-icon img {
+  width: 100%;
+}
+
+button:active {
+  transition: translate(3px 3px);
+  box-shadow: 0px 0px 0px black;
+}/*# sourceMappingURL=style.css.map */
