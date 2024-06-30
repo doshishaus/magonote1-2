@@ -1,0 +1,49 @@
+$korashoColor: #ee4d37;
+$fontfamily: nikomoji;
+$big: 3rem;
+$middle: 1.5rem;
+$normal: 1rem;
+$small: 0.5rem;
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	background-color: $korashoColor;
+}
+
+.content {
+	margin: 0 auto;
+	height: 100%;
+	max-width: 450px;
+	background-image: url(../img/bg-top.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.button {
+	position: relative;
+	top: 33vh;
+	font-family: $fontfamily;
+	display: block;
+	margin: 0 auto;
+	padding: $normal;
+
+	font-size: $big;
+	color: $korashoColor;
+
+	border: 0;
+	border-radius: 9999px;
+	box-shadow: 4px 4px 0px black;
+
+}
+.button:active{
+	box-shadow: 0px 0px 0px black;
+	transform: translate(4px, 4px);
+
+}
+.abusolute{
+	position: absolute;
+}
+.blind {
+	display: none;
+}

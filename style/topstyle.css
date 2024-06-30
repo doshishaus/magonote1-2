@@ -1,0 +1,41 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ee4d37;
+}
+
+.content {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 450px;
+  background-image: url(../img/bg-top.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.button {
+  position: relative;
+  top: 33vh;
+  font-family: nikomoji;
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 3rem;
+  color: #ee4d37;
+  border: 0;
+  border-radius: 9999px;
+  box-shadow: 4px 4px 0px black;
+}
+
+.button:active {
+  box-shadow: 0px 0px 0px black;
+  transform: translate(4px, 4px);
+}
+
+.abusolute {
+  position: absolute;
+}
+
+.blind {
+  display: none;
+}/*# sourceMappingURL=topstyle.css.map */
