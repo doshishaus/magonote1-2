@@ -14,8 +14,10 @@
 .slideInner-3,
 .slideInner-4 {
   height: 100%;
+  max-width: 450px;
   border-radius: 25px;
   background-color: #e2e2e2;
+  overflow-y: scroll;
 }
 .slideInner-1 .slide-head,
 .slideInner-2 .slide-head,

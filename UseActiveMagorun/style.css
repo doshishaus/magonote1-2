@@ -11,19 +11,23 @@
 
 .slideInner-1,
 .slideInner-2,
-.slideInner-3 {
+.slideInner-3,
+.slideInner-4 {
   height: 100%;
   border-radius: 25px;
   background-color: #e2e2e2;
+  overflow-y: scroll;
 }
 .slideInner-1 .slide-head,
 .slideInner-2 .slide-head,
-.slideInner-3 .slide-head {
+.slideInner-3 .slide-head,
+.slideInner-4 .slide-head {
   font-size: 2rem;
 }
 .slideInner-1 .checklist-button,
 .slideInner-2 .checklist-button,
-.slideInner-3 .checklist-button {
+.slideInner-3 .checklist-button,
+.slideInner-4 .checklist-button {
   display: block;
   margin: 5% auto 0;
   padding: 0.5rem;
@@ -38,13 +42,15 @@
 }
 .slideInner-1 .checklist-button:active,
 .slideInner-2 .checklist-button:active,
-.slideInner-3 .checklist-button:active {
+.slideInner-3 .checklist-button:active,
+.slideInner-4 .checklist-button:active {
   transform: translate(3px, 3px);
   box-shadow: 0px 0px 0px black;
 }
 .slideInner-1 .checklist-button.checked,
 .slideInner-2 .checklist-button.checked,
-.slideInner-3 .checklist-button.checked {
+.slideInner-3 .checklist-button.checked,
+.slideInner-4 .checklist-button.checked {
   color: #fff;
 }
 

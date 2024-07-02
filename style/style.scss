@@ -62,6 +62,7 @@ $darkblue: #004aad;
 $gray: #e2e2e2;
 $white: #fff;
 $big: 3rem;
+$middlelarge:2rem;
 $middle: 1.5rem;
 $normal: 1rem;
 $small: 0.5rem;
@@ -71,7 +72,7 @@ $small: 0.5rem;
 
 .container {
     display: block;
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     position: fixed;
     position: -webkit-fixed;
@@ -129,6 +130,7 @@ $small: 0.5rem;
 // フッターの設定
 .menu {
     width: 100%;
+    max-width: 450px;
     height: auto;
     position: fixed;
     bottom: 0;
@@ -164,4 +166,67 @@ $small: 0.5rem;
         box-shadow: 0px 0px 0px black;
         transform: translate(4px, 4px);
     }
+}
+
+// モーダルの設定
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    background-color: $white;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid $korashoColor;
+    border-radius: 25px;
+    width: 80%; 
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    .modal-topmessage{
+        text-align: center;
+        font-size: $middlelarge;
+    }
+    .modal-img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal.show .modal-content {
+    opacity: 1;
+}
+// モーダルの設定終了
+.fadein{
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+.fadein.visible{
+    opacity: 1;
+}
+.fade-out{
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
 }

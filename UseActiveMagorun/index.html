@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 
-<body>
+<body class="fadein">
     <div class="container fade">
         <div class="content">
             <header class="magorun">
@@ -39,8 +39,13 @@
                             <button class="checklist-button" data-checked="false"><img src="./img/Tshatu.png" alt="" class="item"></button>
                             <button class="checklist-button" data-checked="false"><img src="./img/Tshatu.png" alt="" class="item"></button>
                             <button class="checklist-button" data-checked="false"><img src="./img/Tshatu.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/Tshatu.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/Tshatu.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/Tshatu.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/Tshatu.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/Tshatu.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/Tshatu.png" alt="" class="item"></button>
                         </div>
-                        <button class="send">こうかんする</button>  
                     </div>
                     <div class="slideInner-2">
                         <h2 class="slide-head">かぐ</h2>
@@ -52,7 +57,6 @@
                             <button class="checklist-button" data-checked="false"><img src="./img/Tshatu.png" alt="" class="item"></button>
                             <button class="checklist-button" data-checked="false"><img src="./img/Tshatu.png" alt="" class="item"></button>
                         </div>
-                        <button class="send">こうかんする</button>
                     </div>
                     <div class="slideInner-3">
                         <h2 class="slide-head">へや</h2>
@@ -64,8 +68,15 @@
                             <button class="checklist-button" data-checked="false"><img src="./img/Tshatu.png" alt="" class="item"></button>
                             <button class="checklist-button" data-checked="false"><img src="./img/Tshatu.png" alt="" class="item"></button>
                         </div>
-                        <button class="send">こうかんする</button>
                     </div>
+                </div>
+                <button class="send" onclick="openModal()">こうかんする</button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2 class="modal-topmessage">コラショのえいようは</h2>
+                    <img src="./img/graph.png" alt="" class="modal-img">
                 </div>
             </div>
 

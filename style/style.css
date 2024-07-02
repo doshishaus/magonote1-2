@@ -64,7 +64,7 @@ html {
 
 .container {
   display: block;
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
   position: fixed;
   position: -webkit-fixed;
@@ -122,6 +122,7 @@ html {
 
 .menu {
   width: 100%;
+  max-width: 450px;
   height: auto;
   position: fixed;
   bottom: 0;
@@ -156,4 +157,67 @@ html {
 .menu .menu-item:hover, .menu .menu-item:active {
   box-shadow: 0px 0px 0px black;
   transform: translate(4px, 4px);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #ee4d37;
+  border-radius: 25px;
+  width: 80%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.modal-content .modal-topmessage {
+  text-align: center;
+  font-size: 2rem;
+}
+.modal-content .modal-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal.show .modal-content {
+  opacity: 1;
+}
+
+.fadein {
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.fadein.visible {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
 }/*# sourceMappingURL=style.css.map */

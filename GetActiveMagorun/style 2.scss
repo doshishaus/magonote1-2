@@ -29,10 +29,8 @@ $small: 0.5rem;
 .slideInner-3,
 .slideInner-4 {
     height: 100%;
-    max-width: 450px;
     border-radius: 25px;
     background-color: $gray;
-    overflow-y: scroll;
 
     .slide-head {
         font-size: $middlelarge;
