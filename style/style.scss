@@ -67,9 +67,15 @@ $normal: 1rem;
 $small: 0.5rem;
 
 // スタイル
+
+
 .container {
+    display: block;
     height: 90vh;
     width: 100vw;
+    position: fixed;
+    position: -webkit-fixed;
+    top: 0;
 }
 .content{
     max-width: 450px;
