@@ -45,11 +45,13 @@ $small: 0.5rem;
         color: black;
         box-shadow: 3px 3px 0 black;
     }
-    .checklist-button:active{
-        transform: translate(3px,3px);
+
+    .checklist-button:active {
+        transform: translate(3px, 3px);
         box-shadow: 0px 0px 0px black;
     }
-    .checklist-button.checked{
+
+    .checklist-button.checked {
         color: $white;
     }
 }
@@ -58,24 +60,29 @@ $small: 0.5rem;
     .checklist-button {
         border: 2px solid $korashoColor;
     }
-    .checklist-button.checked{
+
+    .checklist-button.checked {
         background-color: $korashoColor;
     }
 }
+
 .slideInner-2 {
     .checklist-button {
         border: 2px solid $green;
     }
-    .checklist-button.checked{
+
+    .checklist-button.checked {
         background-color: $green;
     }
 
 }
+
 .slideInner-3 {
     .checklist-button {
         border: 2px solid $darkblue;
     }
-    .checklist-button.checked{
+
+    .checklist-button.checked {
         background-color: $darkblue;
     }
 }
@@ -85,7 +92,7 @@ $small: 0.5rem;
 }
 
 .slide-1 {
-    background-color: $korashoColor;
+    background-color: $darkblue;
 }
 
 .slide-2 {
@@ -93,5 +100,6 @@ $small: 0.5rem;
 }
 
 .slide-3 {
-    background-color: $darkblue;
+    background-color: $korashoColor;
 }
+

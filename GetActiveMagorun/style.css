@@ -11,19 +11,23 @@
 
 .slideInner-1,
 .slideInner-2,
-.slideInner-3 {
+.slideInner-3,
+.slideInner-4 {
   height: 100%;
   border-radius: 25px;
   background-color: #e2e2e2;
 }
 .slideInner-1 .slide-head,
 .slideInner-2 .slide-head,
-.slideInner-3 .slide-head {
+.slideInner-3 .slide-head,
+.slideInner-4 .slide-head {
   font-size: 2rem;
+  line-height: 3rem;
 }
 .slideInner-1 .checklist-button,
 .slideInner-2 .checklist-button,
-.slideInner-3 .checklist-button {
+.slideInner-3 .checklist-button,
+.slideInner-4 .checklist-button {
   display: block;
   margin: 5% auto 0;
   padding: 0.5rem;
@@ -36,13 +40,15 @@
 }
 .slideInner-1 .checklist-button:active,
 .slideInner-2 .checklist-button:active,
-.slideInner-3 .checklist-button:active {
+.slideInner-3 .checklist-button:active,
+.slideInner-4 .checklist-button:active {
   transform: translate(3px, 3px);
   box-shadow: 0px 0px 0px black;
 }
 .slideInner-1 .checklist-button.checked,
 .slideInner-2 .checklist-button.checked,
-.slideInner-3 .checklist-button.checked {
+.slideInner-3 .checklist-button.checked,
+.slideInner-4 .checklist-button.checked {
   color: #fff;
 }
 
@@ -67,6 +73,13 @@
   background-color: #004aad;
 }
 
+.slideInner-4 .checklist-button {
+  border: 2px solid #b6b911;
+}
+.slideInner-4 .checklist-button.checked {
+  background-color: #b6b911;
+}
+
 .content {
   transition: background-color 0.5s ease;
 }
@@ -81,4 +94,24 @@
 
 .slide-3 {
   background-color: #004aad;
+}
+
+.slide-4 {
+  background-color: #b6b911;
+}
+
+.button-icon {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.send-text {
+  padding: 0.5rem;
+  width: 60vw;
+  border: 2px solid #70ad00;
+  border-radius: 25px;
+}
+
+.slide-p {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

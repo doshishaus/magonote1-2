@@ -3,7 +3,6 @@ $white: #fff;
 $darkblue: #004aad;
 $green: #70ad00;
 $gray: #e2e2e2;
-$yellow:#b6b911;
 
 $fontfamily: "nikomoji";
 $big: 3rem;
@@ -16,7 +15,7 @@ $small: 0.5rem;
 .checklistroot {
     text-align: center;
     width: 85vw;
-    height: 65vh;
+    height: 60vh;
     margin: 15px auto 0;
 }
 
@@ -26,15 +25,13 @@ $small: 0.5rem;
 
 .slideInner-1,
 .slideInner-2,
-.slideInner-3,
-.slideInner-4 {
+.slideInner-3 {
     height: 100%;
     border-radius: 25px;
     background-color: $gray;
 
     .slide-head {
         font-size: $middlelarge;
-        line-height: 3rem;
     }
 
     .checklist-button {
@@ -42,61 +39,62 @@ $small: 0.5rem;
         margin: 5% auto 0;
         padding: $small;
         border-radius: 25px;
-        width: 60%;
+        background-color: $white;
+        width: 120px;
+        height: 120px;
         font-family: $fontfamily;
         font-size: $middle;
         color: black;
         box-shadow: 3px 3px 0 black;
     }
-    .checklist-button:active{
-        transform: translate(3px,3px);
+
+    .checklist-button:active {
+        transform: translate(3px, 3px);
         box-shadow: 0px 0px 0px black;
     }
-    .checklist-button.checked{
+
+    .checklist-button.checked {
         color: $white;
     }
 }
 
-.slideInner-1 {
+.slideInner-3 {
     .checklist-button {
         border: 2px solid $korashoColor;
     }
-    .checklist-button.checked{
+
+    .checklist-button.checked {
         background-color: $korashoColor;
     }
 }
+
 .slideInner-2 {
     .checklist-button {
         border: 2px solid $green;
     }
-    .checklist-button.checked{
+
+    .checklist-button.checked {
         background-color: $green;
     }
 
 }
-.slideInner-3 {
+
+.slideInner-1 {
     .checklist-button {
         border: 2px solid $darkblue;
     }
-    .checklist-button.checked{
+
+    .checklist-button.checked {
         background-color: $darkblue;
     }
 }
 
-.slideInner-4 {
-    .checklist-button {
-        border: 2px solid $yellow;
-    }
-    .checklist-button.checked{
-        background-color: $yellow;
-    }
-}
 .content {
     transition: background-color 0.5s ease;
 }
 
 .slide-1 {
-    background-color: $korashoColor;
+    background-color: $darkblue;
 }
 
 .slide-2 {
@@ -104,24 +102,39 @@ $small: 0.5rem;
 }
 
 .slide-3 {
-    background-color: $darkblue;
-}
-.slide-4 {
-    background-color: $yellow;
+    background-color: $korashoColor;
 }
 
-
-.button-icon{
-    margin: 0 auto;
-    width: 40%;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0px;
 }
 
-.send-text {
+.item {
+    width: 100%;
+    border-radius: 20px;
+    gap: 5px;
+}
+
+.send {
+    margin-top: $normal;
     padding: $small;
-    width: 60vw;
-    border: 2px solid $green;
+    font-family: $fontfamily;
+    font-size: $middle;
+
+    border: 2px solid $darkblue;
     border-radius: 25px;
+    box-shadow: 3px 3px 0 black;
 }
-.slide-p{
-    font-size: 1.5rem;
+
+.send:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px 0 black;
+}
+
+.slide-title {
+    color: $white;
+    text-align: center;
+    margin: 10px -10px;
 }

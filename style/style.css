@@ -67,6 +67,10 @@ html {
   width: 100vw;
 }
 
+.content {
+  max-width: 450px;
+}
+
 .magorun {
   display: flex;
   justify-content: space-around;

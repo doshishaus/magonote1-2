@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ベースマゴルン獲得画面</title>
+    <title>ベースマゴルン交換画面</title>
+
+    <link rel="stylesheet" href="../style/slick-theme.css">
+    <link rel="stylesheet" href="../style/slick.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../style/style.css">
 </head>
@@ -14,7 +17,7 @@
             <header class="magorun">
                 <div class="basemagorun">
                     <a href="../GetBaseMagorun/index.html">
-                        <div class="basemagorun-num">0</div>
+                        <div class="basemagorun-num">300</div>
                         <div class="basemagorun-tanni">ベースマゴルン</div>
                     </a>
                 </div>
@@ -25,10 +28,58 @@
                     </a>
                 </div>
             </header>
-
-            <div class="room">
-                <img src="./img/bg-room.png" alt="">
-
+            <h2 class="slide-title"><a href="../Dead/index.html">バランスよくあげないと？</a></h2>
+            <div class="checklistroot">
+                <div class="your-class checklist">
+                    <div class="slideInner-1">
+                        <h2 class="slide-head">主食(しゅしょく)</h2>
+                        <p>エネルギーになる</p>
+                        <div class="grid">
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                        </div>
+                        <button class="send">こうかんする</button>
+                    </div>
+                    <div class="slideInner-2">
+                        <h2 class="slide-head">主菜(しゅさい)</h2>
+                        <p>タンパク質や脂肪になる</p>
+                        <div class="grid">
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                        </div>
+                        <button class="send">こうかんする</button>
+                    </div>
+                    <div class="slideInner-3">
+                        <h2 class="slide-head">副菜(ふくさい)</h2>
+                        <p>ビタミン、ミネラル、食物繊維を取れる</p>
+                        <div class="grid">
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                            <button class="checklist-button" data-checked="false"><img src="./img/onigiri.png" alt="" class="item"></button>
+                        </div>
+                        <button class="send">こうかんする</button>
+                    </div>
+                </div>
             </div>
 
             <footer class="menu">
@@ -70,6 +121,9 @@
     </div>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="../js/fadein.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/slick.js"></script>
+    <script src="../js/script.js"></script>
 
 
 </body>
