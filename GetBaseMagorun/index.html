@@ -35,6 +35,7 @@
                         <button class="checklist-button" data-checked="false">はやくねた</button>
                         <button class="checklist-button" data-checked="false">歯磨きをした</button>
                         <button class="checklist-button" data-checked="false">やさいをたべた</button>
+                        <button class="get-magorun">今日のポイント</button>
                     </div>
                     <div class="slideInner-2">
                         <h2 class="slide-head">おとうさんおかあさん</h2>
@@ -43,6 +44,7 @@
                         <button class="checklist-button" data-checked="false">歯磨きをした</button>
                         <button class="checklist-button" data-checked="false">バランスの良い食事</button>
                         <button class="checklist-button" data-checked="false">飲酒・喫煙しない</button>
+                        <button class="get-magorun" data-checked="false">今日のポイント</button>
                     </div>
                     <div class="slideInner-3">
                         <h2 class="slide-head">おじいちゃんおばあちゃん</h2>
@@ -51,6 +53,16 @@
                         <button class="checklist-button" data-checked="false">歯磨きをした</button>
                         <button class="checklist-button" data-checked="false">バランスの良い食事</button>
                         <button class="checklist-button" data-checked="false">飲酒・喫煙しない</button>
+                        <div class="slideInner-4">
+                            <button class="get-magorun" data-checked="false" onclick="openModal()">今日のポイント</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2 class="modal-topmessage">400DMをもらった！</h2>
+                        <a href="../UseBaseMagorun/index.html">アイテムとこうかんする</a>
                     </div>
                 </div>
             </div>
