@@ -193,7 +193,7 @@ html {
   display: block;
   margin: 0 auto;
 }
-.modal-content a {
+.modal-content .modal-link {
   display: block;
   text-decoration: none;
   color: #ee4d37;
@@ -205,7 +205,7 @@ html {
   border-radius: 25px;
   box-shadow: 2px 2px 0px black;
 }
-.modal-content a:hover, .modal-content a:active {
+.modal-content .modal-link:hover, .modal-content .modal-link:active {
   background-color: #ee4d37;
   color: #fff;
   transform: 2px 2px;

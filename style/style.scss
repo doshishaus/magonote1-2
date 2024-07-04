@@ -202,7 +202,7 @@ $small: 0.5rem;
         display: block;
         margin: 0 auto;
     }
-    a{
+    .modal-link{
         display: block;
         text-decoration: none;
         color: $korashoColor;
@@ -213,7 +213,7 @@ $small: 0.5rem;
         border-radius: 25px;
         box-shadow: 2px 2px 0px black;
     }
-    a:hover,a:active{
+    .modal-link:hover,.modal-link:active{
         background-color: $korashoColor;
         color: $white;
         transform: 2px 2px;
