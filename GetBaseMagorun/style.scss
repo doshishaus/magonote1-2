@@ -44,31 +44,74 @@ $small: 0.5rem;
         font-size: $middle;
         color: black;
         box-shadow: 3px 3px 0 black;
+        border: 2px solid $darkblue;
+    }
+    .get-magorun {
+        display: block;
+        margin: 5% auto 0;
+        padding: $small;
+        border-radius: 25px;
+        width: 60%;
+        font-family: $fontfamily;
+        font-size: $middle;
+        color: black;
+        box-shadow: 3px 3px 0 black;
+        border: 2px solid $darkblue;
+    }
+    .checklist-button:active {
+        transform: translate(3px, 3px);
+        box-shadow: 0px 0px 0px black;
     }
 
-    .checklist-button:active {
+    .get-magorun:active {
         transform: translate(3px, 3px);
         box-shadow: 0px 0px 0px black;
     }
 
     .checklist-button.checked {
         color: $white;
+        background-color: $darkblue;
+    }
+
+    .get-magorun.checked {
+        color: $white;
+        background-color: $darkblue;
     }
 }
 
 .slideInner-1 {
     .checklist-button {
-        border: 2px solid $korashoColor;
+        border: 2px solid $darkblue;
     }
-
-    .checklist-button.checked {
+    .get-magorun {
+        border: 2px solid $korashoColor;
+        margin-top: 60px;
+    }
+    .get-magorun:active {
         background-color: $korashoColor;
+        color: $white;
+        transform: translate(3px, 3px);
+    }
+    .checklist-button.checked {
+        background-color: $darkblue;
     }
 }
 
 .slideInner-2 {
     .checklist-button {
         border: 2px solid $green;
+    }
+    .get-magorun {
+        border: 2px solid $darkblue;
+        margin-top: 40px;
+    }
+    .get-magorun.checked {
+        background-color: $darkblue;
+    }
+    .get-magorun:active {
+        background-color: $darkblue;
+        color: $white;
+        transform: translate(3px, 3px);
     }
 
     .checklist-button.checked {
@@ -79,11 +122,21 @@ $small: 0.5rem;
 
 .slideInner-3 {
     .checklist-button {
-        border: 2px solid $darkblue;
+        border: 2px solid $korashoColor;
+        border: 2px solid $korashoColor;
     }
-
+    .get-magorun {
+        border: 2px solid $green;
+        margin-top: 40px;
+    }
+    .get-magorun:active {
+        background-color: $green;
+        color: $white;
+        transform: translate(3px, 3px);
+    }
+    
     .checklist-button.checked {
-        background-color: $darkblue;
+        background-color: $korashoColor;
     }
 }
 
@@ -102,4 +155,9 @@ $small: 0.5rem;
 .slide-3 {
     background-color: $korashoColor;
 }
+.text-back {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
+  }
 
