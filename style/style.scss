@@ -51,6 +51,9 @@ table {
 html{
 	font-family: "nikomoji";
 }
+.container{
+    height: 100%;
+}
 .content {
 	margin: 0 auto;
 	height: 100%;
@@ -72,7 +75,7 @@ $small: 0.5rem;
 
 .container {
     display: block;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     position: fixed;
     position: -webkit-fixed;
@@ -186,7 +189,7 @@ $small: 0.5rem;
     background-color: $white;
     margin: 15% auto; 
     padding: 20px;
-    border: 1px solid $korashoColor;
+    border: 3px solid $gray;
     border-radius: 25px;
     width: 80%; 
     opacity: 0; 
@@ -198,6 +201,23 @@ $small: 0.5rem;
     .modal-img{
         display: block;
         margin: 0 auto;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        color: $korashoColor;
+        border: 2px solid $korashoColor;
+        width: fit-content;
+        margin: auto;
+        padding: 0.5rem;
+        border-radius: 25px;
+        box-shadow: 2px 2px 0px black;
+    }
+    a:hover,a:active{
+        background-color: $korashoColor;
+        color: $white;
+        transform: 2px 2px;
+        box-shadow: 0px 0px 0px black;
     }
 }
 
