@@ -77,7 +77,11 @@ $small: 0.5rem;
 
 }
 .slideInner-3 {
+    .slide-p{
+        margin-top: $small;
+    }
     .checklist-button {
+        margin-top: $small!important;
         border: 2px solid $darkblue;
     }
     .checklist-button.checked{
@@ -92,13 +96,23 @@ $small: 0.5rem;
     .checklist-button.checked{
         background-color: $yellow;
     }
+    .slide-img{
+        width: 70%;
+        margin: auto;
+        border: 2px solid $gray;
+        img{
+            border-radius: 25px;
+            width: 100%;
+        }
+    }
 }
 .content {
     transition: background-color 0.5s ease;
 }
 
 .slide-1 {
-    background-color: $korashoColor;
+    background-color: $darkblue;
+
 }
 
 .slide-2 {
@@ -106,7 +120,8 @@ $small: 0.5rem;
 }
 
 .slide-3 {
-    background-color: $darkblue;
+    background-color: $korashoColor;
+
 }
 .slide-4 {
     background-color: $yellow;
@@ -126,4 +141,41 @@ $small: 0.5rem;
 }
 .slide-p{
     font-size: 1.5rem;
+}
+
+.basemagorun{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checklist-div{
+    max-width: 100px;
+    max-height: 100px;
+    padding: 1px;
+    border: 2px solid $gray;
+    border-radius: 25px;    
+    .div-icon{
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+}
+.slide-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5px 2rem;
+
+}
+.slide-already{
+    color: $white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color:$darkblue;
+    border-radius: 9999px;
+    box-shadow: 2px 2px 0px black;
+}
+.slide-p-top{
+    margin-top: $small;
 }

@@ -27,6 +27,7 @@
 .slideInner-2,
 .slideInner-3 {
   height: 100%;
+  width: 100%;
   border-radius: 25px;
   background-color: #e2e2e2;
 }
@@ -43,8 +44,8 @@
   padding: 0.5rem;
   border-radius: 25px;
   background-color: #fff;
-  width: 115px;
-  height: 115px;
+  width: 90px;
+  height: 90px;
   font-family: "nikomoji";
   font-size: 1.5rem;
   color: black;
@@ -53,7 +54,7 @@
 .slideInner-1 .checklist-button:active,
 .slideInner-2 .checklist-button:active,
 .slideInner-3 .checklist-button:active {
-  /* transform: translate(3px, 3px); */
+  transform: translate(3px, 3px);
   box-shadow: 0px 0px 0px black;
 }
 .slideInner-1 .checklist-button.checked,
@@ -106,15 +107,12 @@
 }
 
 .item {
-  width: 85%;
+  width: 100%;
   border-radius: 20px;
   gap: 5px;
-  display: block;
-  margin: 0 auto;
 }
 
 .send {
-  margin-top: 0.2rem;
   padding: 0.5rem;
   font-family: "nikomoji";
   font-size: 1.5rem;

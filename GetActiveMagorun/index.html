@@ -16,14 +16,13 @@
         <div class="content">
             <header class="magorun">
                 <div class="basemagorun">
-                    <a href="../GetBaseMagorun/index.html">
-                        <div class="basemagorun-num">100</div>
-                        <div class="basemagorun-tanni">ベースマゴルン</div>
+                    <a href="../Home2/index.html">
+                        <p class="activemagorun-num">もどる</p>
                     </a>
                 </div>
                 <div class="activemagorun">
                     <a href="../GetActiveMagorun/index.html">
-                        <div class="activemagorun-num">0</div>
+                        <div class="activemagorun-num">800</div>
                         <div class="activemagorun-tanni">アクティブマゴルン</div>
                     </a>
                 </div>
@@ -31,98 +30,64 @@
             <div class="checklistroot">
                 <div class="your-class checklist">
                     <div class="slideInner-1">
-                        <h2 class="slide-head">ハイタッチの写真をとろう</h2>
-                        <p class="slide-p">こども</p>
-                        <button class="checklist-button"><img src="../Chat/img/camera.png" alt="カメラ"
-                                class="button-icon"></button>
-                        <p class="slide-p">おとうさんおかあさん</p>
-                        <button class="checklist-button"><img src="../Chat/img/camera.png" alt="カメラ"
-                                class="button-icon"></button>
-                        <p class="slide-p">おじいちゃんおばあちゃん</p>
-                        <button class="checklist-button"><img src="../Chat/img/camera.png" alt="カメラ"
-                                class="button-icon"></button>
+                        <h2 class="slide-head">わらったかおをとろう</h2>
+                        <div class="slide-flex">
+                            <p class="slide-p">こども</p>
+                            <div class="checklist-div"><img src="./img/selfkids.jpg" alt="子供の自撮り" class="div-icon">
+                            </div>
+                        </div>
+                        <div class="slide-flex">
+                            <div class="checklist-div"><img src="./img/selfpapa.jpg" alt="カメラ" class="div-icon"></div>
+                            <p class="slide-p">おとうさん<Br>おかあさん</p>
+                        </div>
+                        <div class="slide-flex">
+                            <p class="slide-p">おじいちゃん<br>おばあちゃん</p>
+                            <div class="checklist-div"><img src="./img/selfsenior.jpg" alt="カメラ" class="div-icon"></div>
+                        </div>
+                        <div class="slide-already">800AMかくとくずみ</div>
+
                     </div>
                     <div class="slideInner-2">
-                        <h2 class="slide-head">おじいちゃんおばあちゃんの昔のお仕事の話を聞いてみよう</h2>
-                        <p class="slide-p">なんのお仕事をしていたかな</p>
-                        <input type="text" placeholder="お仕事の名前を書いてみよう" class="send-text">
-                        <p class="slide-p">一番大変だったことを聞いてみよう</p>
-                        <input type="text" placeholder="書いてみよう" class="send-text">
-                        <button class="checklist-button" data-checked="false">確定</button>
+                        <h2 class="slide-head">おじいちゃんおばあちゃん<br>とはなそう</h2>
+                        <div class="slide-p-top">
+                            <p class="slide-p">むかしのしごとは？</p>
+                            <input type="text" placeholder="おしごとをかいてね" class="send-text">
+                        </div>
+                        <div class="slide-p-top">
+                            <p class="slide-p">たいへんだったことは？</p>
+                            <input type="text" placeholder="れい：てあらいでのせんたく" class="send-text">
+                        </div>
+                        <button class="checklist-button" data-checked="false">500AMもらう</button>
                     </div>
-                    
+
                     <div class="slideInner-3">
-                        <h2 class="slide-head">血圧をはかってみよう</h2>
+                        <h2 class="slide-head">ロコトレにちょうせん</h2>
+                        <p class="slide-p">かたあしでくつしたをはけるかな？</p>
                         <p class="slide-p">こども</p>
-                        <div>
-                            <label for="up">上</label>
-                            <input type="number" id="up">
-                        </div>
-                        <div>
-                            <label for="under">下</label>
-                            <input type="number" id="under">
-                        </div>
+                        <button class="checklist-button" data-checked="false">できた！</button>
                         <p class="slide-p">おかあさんおとうさん</p>
-                        <div>
-                            <label for="up">上</label>
-                            <input type="number" id="up">
-                        </div>
-                        <div>
-                            <label for="under">下</label>
-                            <input type="number" id="under">
-                        </div><p class="slide-p">おじいちゃんおばあちゃん</p>
-                        <div>
-                            <label for="up">上</label>
-                            <input type="number" id="up">
-                        </div>
-                        <div>
-                            <label for="under">下</label>
-                            <input type="number" id="under">
-                        </div>
-                        <button class="checklist-button" data-checked="false">確定</button>
+                        <button class="checklist-button" data-checked="false">できた！</button>
+
+                        <p class="slide-p">おじいちゃんおばあちゃん</p>
+                        <button class="checklist-button" data-checked="false">できた！</button>
+
+                        <button class="checklist-button" data-checked="false">500AMもらう</button>
                     </div>
                     <div class="slideInner-4">
-                        <h2 class="slide-head">夏祭りに行ってみよう</h2>
-                        
+                        <h2 class="slide-head">なつまつりにいってみよう</h2>
+                        <div class="slide-img"><img src="./img/festival.jpg" alt=""></div>
+                        <p>しゃしんをあげたよ！</p>
+                        <button class="checklist-button" data-checked="false" onclick="openModal()">1000AMもらう</button>
                     </div>
                 </div>
             </div>
-
-            <footer class="menu">
-                <div class="menu-item">
-                    <a href="../UseBaseMagorun/index.html">
-                        <div class="menu-icon">
-                            <img src="../img/icon-meal.png" alt="" class="menu-icon-img">
-                            <p class="menu-p">ごはん</p>
-                        </div>
-                    </a>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2 class="modal-topmessage">1000AMをもらった！</h2>
+                    <a href="../UseActiveMagorun/index.html">アイテムとこうかんする</a>
                 </div>
-                <div class="menu-item">
-                    <a href="../UseActiveMagorun/index.html">
-                        <div class="menu-icon">
-                            <img src="../img/icon-item.png" alt="" class="menu-icon-img">
-                            <p class="menu-p">アイテム</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="../Home2/index.html">
-                        <div class="menu-icon">
-                            <img src="../img/icon-room.png" alt="" class="menu-icon-img">
-                            <p class="menu-p">へや</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="../Chat/index.html">
-                        <div class="menu-icon">
-                            <img src="../img/icon-talk.png" alt="" class="menu-icon-img">
-                            <p class="menu-p">はなす</p>
-                        </div>
-                    </a>
-                </div>
-
-            </footer>
+            </div>
         </div>
     </div>
     <script src="https://unpkg.com/scrollreveal"></script>
