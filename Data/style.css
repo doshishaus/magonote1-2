@@ -37,7 +37,14 @@
   font-size: 1.5rem;
 }
 .bg-white .dl-p {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
+  text-align: center;
+}
+.bg-white .dl-ul {
+  margin: 1.5rem;
+}
+.bg-white .dl-ul li {
+  list-style: disc;
 }
 
 .activemagorun {

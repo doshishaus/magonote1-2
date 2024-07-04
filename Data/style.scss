@@ -49,7 +49,14 @@ $small: 0.5rem;
         font-size: $middle;
     }
     .dl-p{
-        margin: $small 0;
+        margin: $normal 0;
+        text-align: center;
+    }
+    .dl-ul{
+        margin: $middle;
+        li{
+            list-style:disc;
+        }
     }
 }
 .activemagorun{
