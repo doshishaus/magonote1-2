@@ -12,6 +12,7 @@
   height: auto;
   border-radius: 25px;
   background-color: #fff;
+  overflow-y: scroll;
 }
 .chat .chatcomment {
   display: flex;
@@ -41,22 +42,41 @@
   color: #ee4d37;
   justify-content: right;
 }
-.chat .send {
+
+button:active {
+  transition: translate(3px 3px);
+  box-shadow: 0px 0px 0px black;
+}
+
+.menu {
+  position: static !important;
+}
+
+.bg {
+  background-color: #e2e2e2;
+}
+
+.send {
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
+  width: 300px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 3px 1rem 1rem;
   text-align: center;
   background-color: #fff;
   border: 2px solid #70ad00;
   border-radius: 25px;
 }
-.chat .send .send-text {
+.send .send-text {
   padding: 0.5rem;
   width: 60vw;
   border: 2px solid #70ad00;
   border-radius: 25px;
 }
-.chat .send .send-button {
+.send .send-button {
   padding: 0.5rem;
   background-color: #70ad00;
   border: 2px solid #70ad00;
@@ -64,12 +84,12 @@
   font-family: "nikomoji";
   box-shadow: 3px 3px 0px black;
 }
-.chat .send .two {
-  padding-top: 10px;
+.send .two {
+  padding-bottom: 5px;
   display: flex;
   justify-content: space-evenly;
 }
-.chat .send .two .send-icon {
+.send .two .send-icon {
   padding: 0.5rem;
   display: block;
   width: 60px;
@@ -79,15 +99,19 @@
   border-radius: 25px;
   box-shadow: 3px 3px 0px black;
 }
-.chat .send .two .send-icon img {
+.send .two .send-icon img {
   width: 100%;
 }
 
-button:active {
-  transition: translate(3px 3px);
-  box-shadow: 0px 0px 0px black;
+#chat-container {
+  display: none;
 }
 
-.menu {
-  position: static !important;
+.basemagorun, .activemagorun {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+.green {
+  color: #70ad00;
 }/*# sourceMappingURL=style.css.map */

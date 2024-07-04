@@ -87,7 +87,7 @@
   transform: translate(3px, 3px);
 }
 .slideInner-1 .checklist-button.checked {
-  background-color: #004aad;
+  background-color: #ee4d37;
 }
 
 .slideInner-2 .checklist-button {
@@ -123,7 +123,7 @@
   transform: translate(3px, 3px);
 }
 .slideInner-3 .checklist-button.checked {
-  background-color: #ee4d37;
+  background-color: #004aad;
 }
 
 .content {
