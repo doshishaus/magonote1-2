@@ -47,10 +47,10 @@
 }
 
 .slideInner-1 .checklist-button {
-  border: 2px solid #ee4d37;
+  border: 2px solid #004aad;
 }
 .slideInner-1 .checklist-button.checked {
-  background-color: #ee4d37;
+  background-color: #004aad;
 }
 
 .slideInner-2 .checklist-button {
@@ -61,10 +61,10 @@
 }
 
 .slideInner-3 .checklist-button {
-  border: 2px solid #004aad;
+  border: 2px solid #ee4d37;
 }
 .slideInner-3 .checklist-button.checked {
-  background-color: #004aad;
+  background-color: #ee4d37;
 }
 
 .content {
@@ -82,3 +82,9 @@
 .slide-3 {
   background-color: #ee4d37;
 }/*# sourceMappingURL=style.css.map */
+
+.text-back {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px;
+}
