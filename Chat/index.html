@@ -8,24 +8,24 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 
-<body>
+<body class="bg">
     <div class="container fade">
         <div class="content">
             <header class="magorun">
                 <div class="basemagorun">
+                    <a href="../Home3/index.html"><div class="basemagorun-num green">もどる</div></a>
+                </div>
+                <div class="basemagorun">
                     <a href="../GetBaseMagorun/index.html">
-                        <div class="basemagorun-num">550</div>
-                        <div class="basemagorun-tanni">ベースマゴルン</div>
+                        <div class="basemagorun-num">50</div>
                     </a>
                 </div>
                 <div class="activemagorun">
                     <a href="../GetActiveMagorun/index.html">
-                        <div class="activemagorun-num">3000</div>
-                        <div class="activemagorun-tanni">アクティブマゴルン</div>
+                        <div class="activemagorun-num">1300</div>
                     </a>
                 </div>
             </header>
-
             <div class="chat">
                 <div class="chatcomment me">
                     <p class="chatbackground">おばあちゃん！<br>カーペットがほしいから<Br>わらったしゃしんとってほしい！</p>
@@ -51,57 +51,54 @@
                     <img src="./img/oba.png" alt="おばあちゃん" class="chat-icon blue">
                     <p class="chatbackground">きてくれてありがとう<br>まってるね</p>
                 </div>
-                <form action="" class="send">
-                    <input type="text" placeholder="つたえたいことをかいてね" class="send-text">
-                    <button class="send-button">おくる</button>
+                <div id="chat-container">
+                    <!-- <div class="chatcomment me">
+                        <p class="chatbackground"></p>
+                        <img src="./img/kids.png" alt="まご" class="chat-icon red">
+                    </div> -->
+                </div>
+                <div class="send">
                     <div class="two">
                         <button class="send-icon"><img src="./img/dairy.png" alt=""></button>
                         <button class="send-icon"><img src="./img/camera.png" alt=""></button>
                     </div>
-                </form>
+                    <input type="text" placeholder="つたえたいことをかいてね" class="send-text" id="send-text">
+                    <button class="send-button" onclick="sendMessage()">おくる</button>
+                </div>
 
             </div>
-
-            <footer class="menu">
-                <div class="menu-item">
-                    <a href="../UseBaseMagorun/index.html">
-                        <div class="menu-icon">
-                            <img src="../img/icon-meal.png" alt="" class="menu-icon-img">
-                            <p class="menu-p">ごはん</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="../UseActiveMagorun/index.html">
-                        <div class="menu-icon">
-                            <img src="../img/icon-item.png" alt="" class="menu-icon-img">
-                            <p class="menu-p">アイテム</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="../Home2/index.html">
-                        <div class="menu-icon">
-                            <img src="../img/icon-room.png" alt="" class="menu-icon-img">
-                            <p class="menu-p">へや</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="../Chat/index.html">
-                        <div class="menu-icon">
-                            <img src="../img/icon-talk.png" alt="" class="menu-icon-img">
-                            <p class="menu-p">はなす</p>
-                        </div>
-                    </a>
-                </div>
-
-            </footer>
         </div>
     </div>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="../js/fadein.js"></script>
+    <script>
+        function sendMessage() {
+        var text = document.getElementById('send-text').value;
+        if (text.trim() !== '') {
+            var chatContainer = document.getElementById('chat-container');
+            chatContainer.style.display = 'block'; 
+            
+            var newComment = document.createElement('div');
+            newComment.classList.add('chatcomment', 'me');
 
+            var newParagraph = document.createElement('p');
+            newParagraph.classList.add('chatbackground');
+            newParagraph.innerHTML = text.replace(/\n/g, '<br>'); 
+
+            var newImage = document.createElement('img');
+            newImage.src = './img/kids.png';
+            newImage.alt = 'まご';
+            newImage.classList.add('chat-icon', 'red');
+            
+            newComment.appendChild(newParagraph);
+            newComment.appendChild(newImage);
+
+            chatContainer.appendChild(newComment);
+            
+            document.getElementById('send-text').value = ''; 
+        }
+    }
+    </script>
 
 </body>
 

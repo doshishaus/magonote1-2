@@ -26,6 +26,7 @@ $small: 0.5rem;
 
     border-radius: 25px;
     background-color: $white;
+    overflow-y: scroll;
 
     .chatcomment {
         display: flex;
@@ -65,62 +66,83 @@ $small: 0.5rem;
         justify-content: right;
     }
 
-    .send {
-        // position: fixed;
-        // bottom:10vh;
-        display: block;
-        margin: 0 auto;
-        padding: $normal;
-        text-align: center;
-        background-color: $white;
+
+}
+
+button:active {
+    transition: translate(3px 3px);
+    box-shadow: 0px 0px 0px black;
+}
+
+.menu {
+    position: static !important;
+}
+
+.bg {
+    background-color: $gray;
+}
+
+.send {
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding:  3px $normal $normal;
+    text-align: center;
+    background-color: $white;
+    border: 2px solid $green;
+    border-radius: 25px;
+
+    .send-text {
+        padding: $small;
+        width: 60vw;
         border: 2px solid $green;
         border-radius: 25px;
+    }
 
-        .send-text {
+    .send-button {
+        padding: $small;
+        background-color: $green;
+        border: 2px solid $green;
+        border-radius: 9999px;
+        font-family: $fontfamily;
+        box-shadow: 3px 3px 0px black;
+
+
+    }
+
+    .two {
+
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: space-evenly;
+
+        .send-icon {
             padding: $small;
-            width: 60vw;
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-color: $white;
             border: 2px solid $green;
             border-radius: 25px;
-        }
-
-        .send-button {
-            padding: $small;
-            background-color: $green;
-            border: 2px solid $green;
-            border-radius: 9999px;
-            font-family: $fontfamily;
             box-shadow: 3px 3px 0px black;
 
-
-        }
-
-        .two {
-
-            padding-top: 10px;
-            display: flex;
-            justify-content: space-evenly;
-
-            .send-icon {
-                padding: $small;
-                display: block;
-                width: 60px;
-                height: 60px;
-                background-color: $white;
-                border: 2px solid $green;
-                border-radius: 25px;
-                box-shadow: 3px 3px 0px black;
-
-                img {
-                    width: 100%;
-                }
+            img {
+                width: 100%;
             }
         }
     }
 }
-button:active{
-    transition: translate(3px 3px);
-    box-shadow: 0px 0px 0px black;
+
+#chat-container {
+    display: none;
 }
-.menu{
-    position: static!important;
+.basemagorun,.activemagorun{
+    width: fit-content!important;
+}
+.green{
+    color: $green;
 }
