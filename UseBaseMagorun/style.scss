@@ -5,6 +5,7 @@ $green: #70ad00;
 $gray: #e2e2e2;
 $yellow:#d6b71b;
 $purple:rgb(174, 61, 174);
+$skyblue: #027ec6;
 
 $fontfamily: "nikomoji";
 $big: 3rem;
@@ -43,7 +44,8 @@ $small: 0.5rem;
 .slideInner-2,
 .slideInner-3,
 .slideInner-4,
-.slideInner-5 {
+.slideInner-5,
+.slideInner-6 {
     height: 100%;
     width: 100%;
     border-radius: 25px;
@@ -128,6 +130,15 @@ $small: 0.5rem;
         background-color: $yellow;
     }
 }
+.slideInner-6 {
+    .checklist-button {
+        border: 2px solid $skyblue;
+    }
+
+    .checklist-button.checked {
+        background-color: $skyblue;
+    }
+}
 
 .content {
     transition: background-color 0.5s ease;
@@ -152,6 +163,9 @@ $small: 0.5rem;
 
 .slide-5 {
     background-color: $yellow;
+}
+.slide-6 {
+    background-color: $skyblue;
 }
 
 .grid {
