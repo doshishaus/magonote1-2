@@ -3,6 +3,8 @@ $white: #fff;
 $darkblue: #004aad;
 $green: #70ad00;
 $gray: #e2e2e2;
+$yellow:#d6b71b;
+$purple:rgb(174, 61, 174);
 
 $fontfamily: "nikomoji";
 $big: 3rem;
@@ -26,7 +28,8 @@ $small: 0.5rem;
 .slideInner-1,
 .slideInner-2,
 .slideInner-3,
-.slideInner-4 {
+.slideInner-4,
+.slideInner-5 {
     height: 100%;
     border-radius: 25px;
     background-color: $gray;
@@ -42,8 +45,8 @@ $small: 0.5rem;
         padding: $small;
         border-radius: 25px;
         background-color: $white;
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
         font-family: $fontfamily;
         font-size: $middle;
         color: black;
@@ -90,6 +93,24 @@ $small: 0.5rem;
         background-color: $darkblue;
     }
 }
+.slideInner-4 {
+    .checklist-button {
+        border: 2px solid $purple;
+    }
+
+    .checklist-button.checked {
+        background-color: $purple;
+    }
+}
+.slideInner-5 {
+    .checklist-button {
+        border: 2px solid $yellow;
+    }
+
+    .checklist-button.checked {
+        background-color: $yellow;
+    }
+}
 
 .content {
     transition: background-color 0.5s ease;
@@ -106,6 +127,13 @@ $small: 0.5rem;
 .slide-3 {
     background-color: $korashoColor;
 }
+.slide-4 {
+    background-color: $purple;
+}
+
+.slide-5 {
+    background-color: $yellow;
+}
 
 .grid {
     display: grid;
@@ -120,7 +148,6 @@ $small: 0.5rem;
 }
 
 .send {
-    margin-top: $normal;
     padding: $small;
     font-family: $fontfamily;
     font-size: $middle;
@@ -139,4 +166,12 @@ $small: 0.5rem;
     color: $white;
     text-align: center;
     margin: 10px -10px;
+}
+.basemagorun{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-img{
+    width: 100%;
 }

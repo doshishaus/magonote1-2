@@ -12,7 +12,8 @@
 .slideInner-1,
 .slideInner-2,
 .slideInner-3,
-.slideInner-4 {
+.slideInner-4,
+.slideInner-5 {
   height: 100%;
   border-radius: 25px;
   background-color: #e2e2e2;
@@ -21,20 +22,22 @@
 .slideInner-1 .slide-head,
 .slideInner-2 .slide-head,
 .slideInner-3 .slide-head,
-.slideInner-4 .slide-head {
+.slideInner-4 .slide-head,
+.slideInner-5 .slide-head {
   font-size: 2rem;
 }
 .slideInner-1 .checklist-button,
 .slideInner-2 .checklist-button,
 .slideInner-3 .checklist-button,
-.slideInner-4 .checklist-button {
+.slideInner-4 .checklist-button,
+.slideInner-5 .checklist-button {
   display: block;
   margin: 5% auto 0;
   padding: 0.5rem;
   border-radius: 25px;
   background-color: #fff;
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   font-family: "nikomoji";
   font-size: 1.5rem;
   color: black;
@@ -43,14 +46,16 @@
 .slideInner-1 .checklist-button:active,
 .slideInner-2 .checklist-button:active,
 .slideInner-3 .checklist-button:active,
-.slideInner-4 .checklist-button:active {
+.slideInner-4 .checklist-button:active,
+.slideInner-5 .checklist-button:active {
   transform: translate(3px, 3px);
   box-shadow: 0px 0px 0px black;
 }
 .slideInner-1 .checklist-button.checked,
 .slideInner-2 .checklist-button.checked,
 .slideInner-3 .checklist-button.checked,
-.slideInner-4 .checklist-button.checked {
+.slideInner-4 .checklist-button.checked,
+.slideInner-5 .checklist-button.checked {
   color: #fff;
 }
 
@@ -75,6 +80,20 @@
   background-color: #004aad;
 }
 
+.slideInner-4 .checklist-button {
+  border: 2px solid rgb(174, 61, 174);
+}
+.slideInner-4 .checklist-button.checked {
+  background-color: rgb(174, 61, 174);
+}
+
+.slideInner-5 .checklist-button {
+  border: 2px solid #d6b71b;
+}
+.slideInner-5 .checklist-button.checked {
+  background-color: #d6b71b;
+}
+
 .content {
   transition: background-color 0.5s ease;
 }
@@ -91,6 +110,14 @@
   background-color: #ee4d37;
 }
 
+.slide-4 {
+  background-color: rgb(174, 61, 174);
+}
+
+.slide-5 {
+  background-color: #d6b71b;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -104,7 +131,6 @@
 }
 
 .send {
-  margin-top: 1rem;
   padding: 0.5rem;
   font-family: "nikomoji";
   font-size: 1.5rem;
@@ -122,4 +148,14 @@
   color: #fff;
   text-align: center;
   margin: 10px -10px;
+}
+
+.basemagorun {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
