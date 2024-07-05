@@ -27,7 +27,8 @@
 .slideInner-2,
 .slideInner-3,
 .slideInner-4,
-.slideInner-5 {
+.slideInner-5,
+.slideInner-6 {
   height: 100%;
   width: 100%;
   border-radius: 25px;
@@ -37,14 +38,16 @@
 .slideInner-2 .slide-head,
 .slideInner-3 .slide-head,
 .slideInner-4 .slide-head,
-.slideInner-5 .slide-head {
+.slideInner-5 .slide-head,
+.slideInner-6 .slide-head {
   font-size: 2rem;
 }
 .slideInner-1 .checklist-button,
 .slideInner-2 .checklist-button,
 .slideInner-3 .checklist-button,
 .slideInner-4 .checklist-button,
-.slideInner-5 .checklist-button {
+.slideInner-5 .checklist-button,
+.slideInner-6 .checklist-button {
   display: block;
   margin: 5% auto 0;
   padding: 0.5rem;
@@ -61,14 +64,17 @@
 .slideInner-2 .checklist-button:active,
 .slideInner-3 .checklist-button:active,
 .slideInner-4 .checklist-button:active,
-.slideInner-5 .checklist-button:active {
+.slideInner-5 .checklist-button:active,
+.slideInner-6 .checklist-button:active {
+  transform: translate(3px, 3px);
   box-shadow: 0px 0px 0px black;
 }
 .slideInner-1 .checklist-button.checked,
 .slideInner-2 .checklist-button.checked,
 .slideInner-3 .checklist-button.checked,
 .slideInner-4 .checklist-button.checked,
-.slideInner-5 .checklist-button.checked {
+.slideInner-5 .checklist-button.checked,
+.slideInner-6 .checklist-button.checked {
   color: #fff;
 }
 
@@ -107,6 +113,13 @@
   background-color: #d6b71b;
 }
 
+.slideInner-6 .checklist-button {
+  border: 2px solid #027ec6;
+}
+.slideInner-6 .checklist-button.checked {
+  background-color: #027ec6;
+}
+
 .content {
   transition: background-color 0.5s ease;
 }
@@ -129,6 +142,10 @@
 
 .slide-5 {
   background-color: #d6b71b;
+}
+
+.slide-6 {
+  background-color: #027ec6;
 }
 
 .grid {
