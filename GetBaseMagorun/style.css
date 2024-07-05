@@ -42,9 +42,9 @@
   margin: 5% auto 0;
   padding: 0.5rem;
   border-radius: 25px;
-  width: 60%;
+  width: 80%;
   font-family: "nikomoji";
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: black;
   box-shadow: 3px 3px 0 black;
   border: 2px solid #004aad;
@@ -75,27 +75,25 @@
 }
 
 .slideInner-1 .checklist-button {
-  border: 2px solid #004aad;
+  border: 2px solid #ee4d37;
 }
 .slideInner-1 .get-magorun {
-  border: 2px solid #ee4d37;
-  margin-top: 60px;
+  border: 3px solid #70ad00;
 }
 .slideInner-1 .get-magorun:active {
-  background-color: #ee4d37;
+  background-color: #70ad00;
   color: #fff;
   transform: translate(3px, 3px);
 }
 .slideInner-1 .checklist-button.checked {
-  background-color: #004aad;
+  background-color: #ee4d37;
 }
 
 .slideInner-2 .checklist-button {
   border: 2px solid #70ad00;
 }
 .slideInner-2 .get-magorun {
-  border: 2px solid #004aad;
-  margin-top: 40px;
+  border: 3px solid #004aad;
 }
 .slideInner-2 .get-magorun.checked {
   background-color: #004aad;
@@ -110,20 +108,18 @@
 }
 
 .slideInner-3 .checklist-button {
-  border: 2px solid #ee4d37;
-  border: 2px solid #ee4d37;
+  border: 2px solid #004aad;
 }
 .slideInner-3 .get-magorun {
-  border: 2px solid #70ad00;
-  margin-top: 40px;
+  border: 3px solid #ee4d37;
 }
 .slideInner-3 .get-magorun:active {
-  background-color: #70ad00;
+  background-color: #ee4d37;
   color: #fff;
   transform: translate(3px, 3px);
 }
 .slideInner-3 .checklist-button.checked {
-  background-color: #ee4d37;
+  background-color: #004aad;
 }
 
 .content {
@@ -131,7 +127,7 @@
 }
 
 .slide-1 {
-  background-color: #004aad;
+  background-color: #ee4d37;
 }
 
 .slide-2 {
@@ -139,11 +135,16 @@
 }
 
 .slide-3 {
-  background-color: #ee4d37;
+  background-color: #004aad;
 }
 
 .text-back {
   text-align: center;
   font-size: 2rem;
   margin-top: 10px;
+}
+
+.modal-img {
+  width: 60%;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
